@@ -2,13 +2,13 @@ const express = require ('express')
 
 const app = express()
 
-const PORT = process.env.PORT || 4444
+const port = process.env.PORT || 4444
 
 
 app.get('/',(req,res)=>{
     res.send('Hello World')
 })
 
-app.listen(PORT, ( )=>{
-    console.log(`server started on http://localhost:${PORT}`)
-})
+server.listen(port,()=>{  // do not add localhost here if you are deploying it
+    console.log("server listening to port "+port);
+});
